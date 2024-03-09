@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StarGamer</title>
+  <title>StarGamers</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <style>
@@ -12,11 +12,6 @@
       margin: 0px;
       padding: 0px;
     }
-
-    /* body {
-      background: url(img/stats.jpg);
-    }
-     */
 
     li a:hover {
       background-color: black;
@@ -38,71 +33,41 @@ margin: 23px;
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary  z-3 position-absolute  opacity-50 w-100" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg  bg-dark ">
     <div class="container-fluid ">
-      <a class="navbar-brand fs-1 float-end float-sm-end float-md-end float-lg-end" href="#">STAR GAMERS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand text-light" href="#">StarGamer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <div class="cont">
-
-  <ul class="navbar-nav me-auto mb-2 mb-lg-0  justify-content-end">
-    <li class="nav-item  ">
-      <a class="nav-link active fs-6  " aria-current="page" href="#">ABOUT</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link active fs-6  " aria-current="page" href="#">PLATFORMS</a>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="">Home</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link active fs-6 " aria-current="page" href="#">COLLECTION</a>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about">About</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link active fs-6  " aria-current="page" href="#">BLOG</a>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#platforms">Platforms</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link active fs-6  " aria-current="page" href="#">PORTFOLIO</a>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#collections">Collections</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link active fs-6  " aria-current="page" href="#">CONTACT</a>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#blog">Blog</a>
           </li>
-
-          <li class="nav-item  dropdown ">
-            <a class="nav-link dropdown-toggle fs-6  " href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              LOGIN
-            </a>
-            <form class="dropdown-menu p-4   dropdown-menu-end ">
-              <h4 class="text-center ">Log in</h4>
-
-              <div class="mb-3 ">
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="username">
-              </div>
-              <div class="mb-3 ">
-                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-              </div>
-
-              <button type="submit" class="btn btn-primary">Log in</button>
-              <h4 class="text-center mt-2">Sign up</h4>
-              <div class="mb-3 ">
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Name">
-              </div>
-              <div class="mb-3 ">
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Email">
-              </div>
-              <div class="mb-3 ">
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Phone Number">
-              </div>
-              <div class="mb-3 ">
-                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-primary">Log in</button>
-
-            </form>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#portfolio">Portfolio</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact">Contact</a>
+          </li>
+          
         </ul>
-      </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
@@ -149,7 +114,7 @@ margin: 23px;
     </button>
   </div>
 
-  <div class="container-fluid mt-5 mb-5">
+  <div class="container-fluid mt-5 mb-5" id="about">
     <div class="row featurette d-flex justify-content-center align-items-center">
       <div class="col-md-7">
         <h2 class="featurette-heading w-75 text-dark">Choose from 10000+ Games to Download </h2>
@@ -167,8 +132,8 @@ margin: 23px;
     </div>
   </div>
 
-  <h1 class="text-center text-dark fw-bolder">PLATFORMS</h1>
-  <div class="card-group">
+  <h1 class="text-center text-dark fw-bolder " id="platforms">PLATFORMS</h1>
+  <div class="card-group" >
     <div class="card bg-dark text-light">
       <img src="img/platform-1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -210,7 +175,7 @@ margin: 23px;
     </div>
   </div>
 
-  <h1 class="text-center text-dark fw-bolder mt-5">COLLECTION</h1>
+  <h1 class="text-center text-dark fw-bolder mt-5" id="collections">COLLECTION</h1>
 
   <div class="container-fluid float-start w-50  mb-5">
     <h1 class="text-center text-dark fw-bolder mt-3">Popular</h1>
@@ -385,7 +350,7 @@ margin: 23px;
   </div>
 
 
-  <h1 class="text-center text-dark fw-bolder mt-5 ">Latest Blog & News</h1>
+  <h1 class="text-center text-dark fw-bolder mt-5 " id="blog">Latest Blog & News</h1>
 
   <div class="container-fluid float-start w-50 mt-5 bg-dark mb-5">
     <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -453,7 +418,7 @@ margin: 23px;
     </div>
   </div>
   <div class="">
-    <h1 class="text-center text-dark fw-bolder mt-5 ">PORTFOLIO</h1>
+    <h1 class="text-center text-dark fw-bolder mt-5 " id="portfolio">PORTFOLIO</h1>
     <div class="d-flex w-25 mt-4">
       <img class="w-100" src="img/best-5.jpg" alt="">
       <img class="w-100" src="img/best-9.jpg" alt="">
@@ -510,7 +475,7 @@ margin: 23px;
     <img class="w-50 border border-white mb-5" src="img/partner-8.jpg" alt="">
     <img class="w-50 border border-white mb-5" src="img/partner-9.jpg" alt="">
   </div>
-  <h1 class="text-center text-dark fw-bolder mt-3 mb-">Write to Us</h1>
+  <h1 class="text-center text-dark fw-bolder mt-3 mb-" id="contact">Write to Us</h1>
 
 
   <div class="container my-4 w-50 mb-5">
@@ -587,12 +552,7 @@ margin: 23px;
         </div>
       </div>
     </div>
-    <!-- <footer class=" text-center ">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p class=" bg ">© 2020-2021 Star Games.All rights reserved, Inc. <a href="#">Privacy</a> &
-        <a href="#">Terms</a>
-      </p>
-    </footer> -->
+   
     <footer>
       <div class="text-center  mt-5 bg-light">
           
@@ -603,67 +563,8 @@ margin: 23px;
       </div>
   </footer>
 
-    <!-- <div class=" container  bg ">
-      
-      <hr class=" d-flex justify-content-center align-items-center mt-5">
-    </div>
-    <footer class=" text-center">
-    </footer>
-  </div> -->
+
   
-
-
-  <!-- <div class="bg-dark mt-5 d-flex w-100">
-    <div class="bg-dark w-100">
-      <ul class="d-flex justify-content-center align-items-center">
-        <li class="text-dark p-5 mx-5 kt w-25">INFORMATION
-          <br><br>
-          <p class="text-success ">SPECIALS</p>
-          <p class="text-success ">NEW PRODUCTS</p>
-          <p class="text-success ">TOP SELLERS</p>
-          <p class="text-success ">BLOGS</p>
-          <p class="text-success ">REVIWES</p>
-          <p class="text-success ">NEWS</p>
-      </li>
-        <li class="text-dark  mx-5 kt w-25">CATEGORIES
-          <br><br>
-          <p class="text-success ">GAMES GENRES</p>
-          <p class="text-success ">PC GAMES</p>
-          <p class="text-success ">PLAYSTATION GAMES</p>
-          <p class="text-success ">XBOX GAMES</p>
-          <p class="text-success ">WILL GAMES</p>
-          <p class="text-success ">ALL GAMES</p>
-        </li>
-        <li class="text-dark  mx-5 kt w-25">MY ACCOUNT
-          <br><br>
-          <p class="text-success ">MY ACCOUNTS</p>
-          <p class="text-success ">MY ORDERS</p>
-          <p class="text-success ">MY DOWNLOADS</p>
-          <p class="text-success ">EDIT PROFILE</p>
-          <p class="text-success ">CHANGE PASSWORD</p>
-          <p class="text-success ">DONATE</p>
-        </li>
-        <li class="text-dark  mx-5 kt w-25">CONTACT
-          <br><br>
-          <p class="text-success ">50019 S.p.A</p>
-          <p class="text-success ">Parma Via Modena</p>
-          <p class="text-success ">Lucknow</p>
-          <p class="text-success ">Uttarpradesh, India</p>
-          <p class="text-success ">+91 7813***</p>
-          <p class="text-success ">Info@example.com</p>
-        </li>
-      </ul><div class=" container  bg ">
-
-        <hr class=" d-flex justify-content-center align-items-center mb-5">
-      </div>
-      <footer class="container ">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p class="d-flex justify-content-center align-items-center bg">© 2020-2021 Star Games.All rights reserved, Inc. · <a href="#">Privacy</a> ·
-            <a href="#">Terms</a></p>
-    </footer>
-    </div>
-  </div> -->
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
